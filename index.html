@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Investment’s Club – Dashboard marchés & macro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="navbar-inner">
+          <div class="brand">
+            <div class="brand-pill">SIC</div>
+            <div class="brand-meta">
+              <div class="brand-title">Student Investment’s Club</div>
+              <div class="brand-sub">Markets & Macro Studio · Bordeaux</div>
+            </div>
+          </div>
+          <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Dashboard</a>
+            <a href="tools.html" class="nav-link">Outils</a>
+            <a href="club.html" class="nav-link">Club & programme</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- PAGE -->
+      <main class="page">
+        <section class="container">
+          <!-- HERO -->
+          <header class="page-header">
+            <div class="page-kicker">Dashboard pédagogique</div>
+            <h1 class="page-title">
+              Lire les marchés comme un étudiant, avec un regard de professionnel.
+            </h1>
+            <p class="page-subtitle">
+              Student Investment’s Club est un studio étudiant dédié aux marchés, à la macro et à
+              la gestion du risque. L’objectif : comprendre les mécanismes, pas chercher des
+              “tuyaux”.
+            </p>
+
+            <div class="chips-row">
+              <span class="chip">Indices & crypto labo</span>
+              <span class="chip">Macro & politiques publiques</span>
+              <span class="chip">Culture d’investissement long terme</span>
+            </div>
+
+            <div class="btn-row">
+              <a href="tools.html" class="btn btn-primary">Simuler & poser des questions</a>
+              <a href="club.html" class="btn btn-soft">Découvrir le Student Investment’s Club</a>
+            </div>
+          </header>
+
+          <!-- GRID HERO -->
+          <section class="grid grid-2">
+            <!-- Bloc texte -->
+            <article class="panel panel-soft">
+              <div class="panel-header">
+                <div class="panel-title">Lecture SIC</div>
+                <div class="panel-meta">Cadre de travail</div>
+              </div>
+              <p class="body-text">
+                Nous traitons les marchés comme un système à observer : indices, taux, devises,
+                décisions de banques centrales, budgets publics et réactions des investisseurs.
+              </p>
+              <p class="body-text">
+                L’enjeu n’est pas de “prédire” le CAC 40, mais de savoir le lire, le relier à la
+                macro et être capable d’en parler proprement en entretien, en master ou avec des
+                pros de la finance.
+              </p>
+              <ul class="bullet-list">
+                <li>Indices actions & ETF monde comme colonne vertébrale.</li>
+                <li>Crypto traitée comme laboratoire de volatilité, jamais comme raccourci.</li>
+                <li>Focus constant sur l’horizon et la gestion du risque.</li>
+              </ul>
+            </article>
+
+            <!-- Bloc board marchés TradingView -->
+            <section class="panel">
+              <div class="panel-header">
+                <div class="panel-title">Board marchés</div>
+                <div class="panel-meta">TradingView · indices & crypto labo</div>
+              </div>
+
+              <div class="tv-wrapper">
+                <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget" id="tv-overview"></div>
+                  <script
+                    type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+                    async
+                  >
+{
+  "symbols": [
+    ["EURONEXT:PX1|1D"],      /* CAC 40 */
+    ["OANDA:SPX500USD|1D"],   /* S&P 500 */
+    ["NASDAQ:NDX|1D"],        /* Nasdaq 100 */
+    ["CAPITALCOM:BTCUSD|1D"], /* Bitcoin */
+    ["CAPITALCOM:ETHUSD|1D"]  /* Ethereum */
+  ],
+  "chartType": "area",
+  "colorTheme": "dark",
+  "autosize": true,
+  "locale": "fr",
+  "lineWidth": 2,
+  "dateRange": "3M",
+  "showVolume": false,
+  "width": "100%",
+  "height": "100%"
+}
+                  </script>
+                </div>
+              </div>
+
+              <p class="caption">
+                Graphiques fournis par TradingView, utilisés ici dans un cadre associatif étudiant
+                et exclusivement pédagogique.
+              </p>
+            </section>
+          </section>
+
+          <!-- Macro & questions clés -->
+          <section class="grid grid-2" style="margin-top: 2.2rem">
+            <article class="panel">
+              <div class="panel-header">
+                <div class="panel-title">Macro & politiques publiques</div>
+                <div class="panel-meta">Ce que l’on suit</div>
+              </div>
+              <p class="body-text">
+                Chaque semaine, le club suit quelques points fixes : décisions de banques
+                centrales, annonces budgétaires significatives, publications d’inflation et
+                décisions majeures sur la dette publique.
+              </p>
+              <ul class="bullet-list">
+                <li>
+                  Comment un mouvement de taux directeur se traduit (ou non) dans les indices.
+                </li>
+                <li>
+                  Comment les annonces budgétaires modifient les anticipations de croissance et de
+                  politique monétaire.
+                </li>
+                <li>
+                  Comment les investisseurs arbitrent entre actions, obligations, cash et actifs
+                  risqués.
+                </li>
+              </ul>
+            </article>
+
+            <aside class="panel">
+              <div class="panel-header">
+                <div class="panel-title">Questions que l’on travaille</div>
+                <div class="panel-meta">Grille SIC</div>
+              </div>
+              <ul class="bullet-list">
+                <li>
+                  Que signifie vraiment “investir progressivement” via un ETF monde vs rester sur
+                  un livret à court terme ?
+                </li>
+                <li>
+                  Comment l’horizon (3, 5, 10 ans) change la manière dont on supporte la
+                  volatilité ?
+                </li>
+                <li>
+                  Où placer la crypto dans un patrimoine : cœur, satellite, laboratoire ?
+                </li>
+                <li>
+                  Comment relier un graphique d’indice à un communiqué de banque centrale ou à une
+                  annonce budgétaire ?
+                </li>
+              </ul>
+              <p class="body-text" style="margin-top: 0.6rem">
+                La page <strong>Outils</strong> permet de simuler des trajectoires d’investissement
+                et de poser ces questions à un assistant pédagogique.
+              </p>
+              <div class="btn-row">
+                <a href="tools.html" class="btn btn-soft">Accéder aux outils</a>
+              </div>
+            </aside>
+          </section>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <span>Student Investment’s Club – Markets & Macro Studio.</span>
+          <span>Cadre associatif étudiant, contenu non contractuel.</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
